@@ -1,0 +1,76 @@
+# =============================================
+# HuggingFace / credenciales  ← NUNCA subir
+# =============================================
+.env
+.env.*
+*.env
+token.txt
+hf_token.txt
+secrets.json
+
+# =============================================
+# Python
+# =============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# =============================================
+# Entornos virtuales
+# =============================================
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# =============================================
+# IDEs
+# =============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============================================
+# Jupyter / notebooks
+# =============================================
+.ipynb_checkpoints/
+*.ipynb
+
+# =============================================
+# Logs y temporales
+# =============================================
+*.log
+*.tmp
+*.bak
+logs/
+tmp/
+
+# =============================================
+# Modelos pesados (subir por separado con Git LFS si es necesario)
+# =============================================
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.onnx
