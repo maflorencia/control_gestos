@@ -1,6 +1,5 @@
-mediapipe==0.10.35
-opencv-python-headless==4.10.0.84
-gradio
-numpy>=2.0.0
+mediapipe==0.10.14
+opencv-python-headless
+numpy
 
 
