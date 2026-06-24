@@ -121,7 +121,7 @@ Usá gestos frente a la cámara para navegar la presentación:
 | ☝️ Índice solo hacia arriba | 🔴 Puntero láser |
 """
 
-with gr.Blocks(title="Gesture Presenter", theme=gr.themes.Ocean()) as demo:
+with gr.Blocks(title="Control de Gestos", theme=gr.themes.Ocean()) as demo:
     gr.Markdown(DESCRIPTION)
 
     with gr.Row():
