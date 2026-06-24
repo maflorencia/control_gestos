@@ -3,11 +3,11 @@
 App Gradio para HuggingFace Spaces.
 
 
-Gestos:
-  ☝ Índice en zona DERECHA  → Slide siguiente
-  ☝ Índice en zona IZQUIERDA → Slide anterior
-  ✊ Puño cerrado             → Pausar / reanudar
-  🖐 Mano abierta             → Volver al inicio (slide 1)
+| Gesto | Acción |
+|---|---|
+| 🖐️ Mano abierta (4 o 5 dedos) | ➡ Slide siguiente |
+| ✊ Puño cerrado | ⬅ Slide anterior |
+| ☝️ Índice solo hacia arriba | 🔴 Puntero láser |
 """
 
 import cv2
