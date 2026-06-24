@@ -77,7 +77,10 @@ class GestureEngine:
             return "NONE", None, annotated
 
         hand_lm = results.multi_hand_landmarks[0]
+        annotated = cv2.cvtColor(annotated, cv2.COLOR_RGB2BGR)
+
         mp_drawing.draw_landmarks(
+            
             annotated,
             hand_lm,
             mp_hands.HAND_CONNECTIONS,
@@ -85,6 +88,7 @@ class GestureEngine:
             mp_drawing_styles.get_default_hand_connections_style(),
         )
 
+        annotated = cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB)
         lm = hand_lm.landmark
         fingers = self._fingers_up(lm)
         gesture = self._classify(fingers)

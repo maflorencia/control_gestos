@@ -101,7 +101,7 @@ def process_frame(frame: np.ndarray):
 
     # Convertir a RGB para Gradio
     slide_rgb = cv2.cvtColor(slide_display, cv2.COLOR_BGR2RGB)
-    cam_rgb = cv2.cvtColor(annotated_cam, cv2.COLOR_BGR2RGB)
+    cam_rgb = annotated_cam
 
     return slide_rgb, cam_rgb, controller.progress, feedback_msg or "–"
 
@@ -121,7 +121,7 @@ Usá gestos frente a la cámara para navegar la presentación:
 | ☝️ Índice solo hacia arriba | 🔴 Puntero láser |
 """
 
-with gr.Blocks(title="Control de Gestos", theme=gr.themes.Ocean()) as demo:
+with gr.Blocks(title="Presentación por Gestos", theme=gr.themes.Ocean()) as demo:
     gr.Markdown(DESCRIPTION)
 
     with gr.Row():
